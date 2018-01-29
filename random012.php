@@ -35,9 +35,12 @@ for ($i=0; $i<10; $i++) {
 
 function random012()
 {
-    $rand1 = random01();
-    $rand2 = random01();
-    $rand3 = random01();
+    $rand = random0123();
+    if ($rand == 3) {
+        $rand = random012();
+    }     
+    return $rand;
+}
 
 
 
